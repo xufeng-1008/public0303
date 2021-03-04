@@ -1,0 +1,46 @@
+@import "common";
+.portal-warp{
+  height: 100%;
+  width: 100%;
+}
+.portal-menu-list-wrap{
+  height: 100%;
+  .comment-wrap{
+    background: #fff;
+    margin-bottom: 10px;
+    &.is-todo {
+      background: none;
+    }
+    .module-title-wrap {
+      padding-left: 14px;
+      display: flex;
+      justify-content: space-between;
+      line-height: 45px;
+      overflow: hidden;
+      &.no-title {
+        justify-content: flex-end;
+      }
+      .module-title{
+        flex:auto;
+        font-size: 19px;
+        font-weight: 400;
+        color: #333333;
+        white-space: nowrap;/*设置不换行*/
+        overflow: hidden; /*设置隐藏*/
+        text-overflow: ellipsis; /*设置隐藏部分为省略号*/
+        padding-right: 10px;
+
+      }
+    }
+
+  }
+  .portal-menu-list{
+    height: 100%;
+  }
+  .no-portal-menu-list {
+    color: #969799;
+    font-size: 14px;
+    line-height: 50px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,66 @@
+.use-text {
+  padding: 1rem;
+  font-size: 0.875rem;
+  font-weight: normal;
+  color: rgba(69, 90, 100, 0.6);
+}
+
+.van-cell--required::before {
+  left: 6px;
+}
+.van-icon-location-o::before {
+  color: #007dff;
+}
+
+.field-read {
+  // display: flex;
+  // position: relative
+  padding: 0.7rem 0.9rem;
+  font-size: 0.875rem;
+
+  .field-value {
+    // overflow: hidden;
+    // text-overflow: ellipsis;
+    margin-left: 10px;
+  }
+}
+
+.van-field__label {
+  width: auto;
+}
+
+// .van-cell {
+//   padding: 0.625rem 1rem;
+// }
+
+.van-cell__title {
+  flex: none;
+}
+.van-cell__value {
+  flex: 1;
+  // margin-left: 0.5rem;
+  overflow: hidden;
+  color: #666;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.van-cell__right-icon {
+  position: absolute;
+}
+
+.van-hairline--top-bottom::after,
+.van-hairline-unset--top-bottom::after {
+  border-width: 0;
+}
+.van-overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.body {
+  padding-top: 50px;
+}
+
+.van-cell:not(:last-child)::after {
+  border-bottom: none;
+}

@@ -1,0 +1,38 @@
+/**
+ *
+ * 以下配置中，如涉及 url，相关配置均不需携带协议头（http 或 https），比如：
+ * 错误：https://www.qycloud.com.cn
+ * 正确：www.qycloud.com.cn
+ */
+module.exports = {
+  https: false,
+  userAgent: 'mini',
+  dev: {
+    host: 'dev.bsf.demo.qpaas.com',
+    port: 8080,
+    /**
+     * 代理配置格式：{ path: String, target: String }
+     * target 默认值为配置项 server.wwww 的值
+     */
+    proxies: [
+      { path: '/api' },
+      { path: '/api2' },
+      { path: '/napi' },
+      { path: '/service_org' },
+    ],
+  },
+
+  // // bsf demo
+  server: {
+    root: 'qycloud.com.cn',
+    www: 'www.bsf.demo.qpaas.com:22212',
+    sta: 'static.bsf.demo.qpaas.com:22212',
+    fileio: 'fileio.bsf.demo.qpaas.com:22212',
+    storeView: 'fileio.bsf.demo.qpaas.com:22212',
+  },
+  previewUrl: 'https://dp.qpaas.com/op/view.aspx?src=',
+  router: {
+    base: '/bee/miniprogram',
+    // base: '/bee/mobile-native', // deploy-native  137环境下部署路径
+  },
+};

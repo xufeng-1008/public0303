@@ -1,0 +1,12 @@
+version: "3"
+services:
+  miniprogram:
+    image: miniprogram:v1.0
+    ports:
+      - "8080:8080"
+    networks:
+      - webnet
+    restart: always
+networks:
+  webnet:
+    driver: bridge

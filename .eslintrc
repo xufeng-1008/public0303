@@ -1,0 +1,31 @@
+{
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "plugin:vue/essential",
+    "eslint:recommended",
+    "airbnb-base"
+  ],
+  "rules": {
+    "indent": ["error", 2, {  "SwitchCase": 1 }],
+    "no-alert": "off",
+    "no-console": "off",
+    "no-cond-assign": "off",
+    "no-use-before-define": "off",
+    "no-param-reassign": "off",
+    "global-require": "off",
+    "import/no-dynamic-require": "off",
+    "import/no-extraneous-dependencies": "off",
+    "quote-props": ["error", "consistent"],
+    "max-len": ["error", { "code": 240 }],
+    "import/prefer-default-export": "off",
+    "import/no-unresolved": [2, { "ignore": ["@", "@qycloud"] }],
+    "no-underscore-dangle": ["error", { "allowAfterThis": true }],
+    "linebreak-style": [0 ,"error", "windows"]
+  },
+  "parserOptions": {
+    "parser": "babel-eslint"
+  }
+}

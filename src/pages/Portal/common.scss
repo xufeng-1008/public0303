@@ -1,0 +1,28 @@
+.portal-warp {
+  background: #f0f2f5;
+  * {
+    font-family: PingFangSC;
+    box-sizing: border-box;
+  }
+  i {
+    font-style: normal;
+  }
+  p{
+    margin:0;
+    padding:2px 0;
+  }
+  .text-overflow {
+    /* 内容过长显示成省略号（内容显示为一行） */
+    white-space: nowrap;/*设置不换行*/
+    overflow: hidden; /*设置隐藏*/
+    text-overflow: ellipsis; /*设置隐藏部分为省略号*/
+  }
+  .right-icon-arrow {
+    color: #9a9a9a;
+    font-size: 12px;
+  }
+  .padding-line {
+    padding-top: 5px;
+  }
+}
+
